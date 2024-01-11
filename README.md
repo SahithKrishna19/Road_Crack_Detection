@@ -60,4 +60,4 @@ This code is designed for road crack detection using Google Street View images. 
 
 ## License
 
-This project is licensed under the (MIT License)[https://opensource.org/license/mit/]
+This project is licensed under the [MIT License](https://opensource.org/license/mit/)
