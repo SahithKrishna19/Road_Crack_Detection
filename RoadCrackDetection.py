@@ -6,7 +6,7 @@ drive.mount('/content/drive')
 
 import google_streetview.api
 
-result_path='/content/drive/MyDrive/Road Crack Detection/904 Field St'
+result_path='/content/drive/MyDrive/Road Crack Detection/'
 
 # Define a list of locations
 a,b = 41.6016424,-87.5093424
@@ -29,7 +29,7 @@ for loc in locations:
         'location': loc['location'],
         'heading': '151.78',
         'pitch': '-90',
-        'key': 'AIzaSyAcGjSk8qsV9AVFhXFLSJcXSIjDbDZfUYk'
+        'key': 'YOUR_KEY'
     })
 
 # Create a list of results objects for each request
@@ -118,7 +118,7 @@ for i in files:
         # Define a function to get the address components using the Google Maps Geocoding API
         def get_address_components(location):
           url = 'https://maps.googleapis.com/maps/api/geocode/json'
-          params = {'latlng': '{},{}'.format(location['lat'], location['lng']), 'key': 'AIzaSyAcGjSk8qsV9AVFhXFLSJcXSIjDbDZfUYk'}
+          params = {'latlng': '{},{}'.format(location['lat'], location['lng']), 'key': 'YOUR_KEY'}
           response = requests.get(url, params=params).json()
           address_components = response['results'][0]['address_components']
           country = ''
